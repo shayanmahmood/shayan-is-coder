@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  display: flex;
+  background-color: black !important;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center; }
+
+.content {
+  position: relative;
+  left: 240px; }
+
+.content h2 {
+  color: transparent;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%); }
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4; }
+
+.content h2:nth-child(2) {
+  color: blue;
+  animation: animate 4s ease-in-out infinite;
+  -webkit-text-stroke: 2px #03a9f4;
+  transition: all .5s; }
+
+.v {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4; }
+
+.vv {
+  color: blue;
+  animation: animate1 4s ease-in-out infinite;
+  -webkit-text-stroke: 2px #03a9f4;
+  transition: all .5s; }
+
+.y {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4; }
+
+.yy {
+  color: blue;
+  animation: animate2 4s ease-in-out infinite;
+  -webkit-text-stroke: 2px #03a9f4;
+  transition: all .5s; }
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(0% 105%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 100% 100%); }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 10% 100%);
+    color: red; }
+  80% {
+    color: aquamarine; }
+  90% {
+    color: pink; } }
+
+@keyframes animate1 {
+  0%,
+  100% {
+    clip-path: polygon(0% 105%, 16% 44%, 33% 50%, 84% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 100% 100%); }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 10% 100%);
+    color: yellow; }
+  80% {
+    color: navy; }
+  90% {
+    color: pink; } }
+
+@keyframes animate2 {
+  0%,
+  100% {
+    clip-path: polygon(0% 105%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 100% 100%); }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 70% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 10% 100%);
+    color: orange; }
+  80% {
+    color: violet; }
+  90% {
+    color: royalblue; } }
+
+.fab {
+  font-size: 70px;
+  color: #fff;
+  margin: 0 20px;
+  text-shadow: 0 0 10px #fff, 0 0 20px black, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+  transition: all .5s; }
+
+.fab:hover {
+  text-shadow: 0 0 20px white, 0 0 20px black, 0 0 100px #bfff00, 0 0 120px #bfff00, 0 0 130px #bfff00, 0 0 140px #bfff00, 0 0 150px #bfff00, 0 0 160px #bfff00;
+  transition: all .5s; }
+
+.icon {
+  padding: 0 50px; }
+
+.arrow {
+  position: relative;
+  left: 50px; }
+
+.arrow :nth-child(1) {
+  position: absolute;
+  border-bottom: 5px solid cyan;
+  border-right: 5px solid cyan;
+  transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  left: 170px;
+  animation: animated 2s infinite; }
+
+.arrow :nth-child(2) {
+  position: absolute;
+  border-bottom: 5px solid cyan;
+  border-right: 5px solid cyan;
+  transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  left: 170px;
+  top: 20px;
+  animation: animated 2s infinite; }
+
+.arrow :nth-child(3) {
+  position: absolute;
+  border-bottom: 5px solid cyan;
+  border-right: 5px solid cyan;
+  transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  left: 170px;
+  top: 40px;
+  animation: animated 2s infinite; }
+
+@keyframes animated {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+    color: transparent; }
+  50% {
+    opacity: 1;
+    border-bottom: 5px solid cyan;
+    border-right: 5px solid cyan; }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+    border-bottom: 5px solid aquamarine;
+    border-right: 5px solid aquamarine; } }
